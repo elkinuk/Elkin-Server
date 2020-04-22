@@ -1,0 +1,1 @@
+Path to BD locally - /usr/local/var/mongod
