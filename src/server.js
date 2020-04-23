@@ -25,7 +25,8 @@ const withDB = async (operations, res) => {
 
 app.get('/api/posts', async (req, res) => {   
     await withDB (async db => { 
-        const posts = await db.collection('posts').find();
+        const posts = await db.collection('posts').find({});
+        console.log(posts);
         res.status(200).json(posts);
     }, res);
 });
