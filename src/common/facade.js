@@ -23,6 +23,10 @@ class Facade {
     updateById(...args) {
       return this.Model.findByIdAndUpdate(...args);
     }
+
+    updateOne(...args) {
+      return this.Model.updateOne(...args);
+    }
   
     deleteById(...args) {
       return this.Model.findByIdAndDelete(...args);

@@ -6,7 +6,8 @@ const posts = new mongoose.Schema({
   text: Array,
   subTitle: String,
   pic: String,
-  upvotes: Number
+  upvotes: Number,
+  comments: Array
 });
 
 module.exports = posts;
