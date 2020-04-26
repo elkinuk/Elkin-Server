@@ -1,13 +1,9 @@
 const mongoose = require('mongoose');
 
 const projects = new mongoose.Schema({
-  name: String,
-  pic: String,
-  picBlur: Array,
+  url: String,
   icon: String,
-  iconType: String,
-  text: Number,
-  url: Array
+  iconType: String
 });
 
 module.exports = projects;

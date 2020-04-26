@@ -1,10 +1,10 @@
 import Facade from './../../common/facade.js';
 import model from './repository.js';
 
-class ProjectsFacade extends Facade {
+class ContactsFacade extends Facade {
     constructor() {
       super(model);
     }
   }
   
-module.exports = new ProjectsFacade();
+module.exports = new ContactsFacade();
