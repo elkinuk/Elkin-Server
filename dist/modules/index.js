@@ -25,8 +25,6 @@ indexRouter.use('/api/fiddles', _routes4["default"]);
 indexRouter.use('/api/defaults', _routes5["default"]);
 indexRouter.all('/api/*', function (_, res) {
   res.send('No such Endpoint');
-});
-indexRouter.all('*', function (_, res) {
-  res.send(_path["default"].join(__dirname, './../build/index.html'));
-});
+}); //indexRouter.all('*', (_, res) => { res.send(path.join(__dirname, './../build/index.html')); });
+
 module.exports.indexRouter = indexRouter;

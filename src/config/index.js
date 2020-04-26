@@ -15,7 +15,7 @@ const app = express();
 //   app.use(morgan('combined', {stream: accessLogStream}));
 // } else app.use(morgan('dev'));
 
-app.use(express.static(path.join(__dirname, './../build')));
+//app.use(express.static(path.join(__dirname, './../build')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

@@ -17,8 +17,8 @@ var app = (0, _express["default"])(); //const morgan = require('morgan');
 //   const accessLogStream = fs.createWriteStream(__dirname + '/logs/' + 'access.log', {flags: 'a'});
 //   app.use(morgan('combined', {stream: accessLogStream}));
 // } else app.use(morgan('dev'));
+//app.use(express.static(path.join(__dirname, './../build')));
 
-app.use(_express["default"]["static"](_path["default"].join(__dirname, './../build')));
 app.use(_express["default"].json());
 app.use(_express["default"].urlencoded({
   extended: false
