@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+
 import app from './config';
 
 app.listen(4000, () => {

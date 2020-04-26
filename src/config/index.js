@@ -1,4 +1,6 @@
 import express from 'express';
+import path from 'path';
+
 import routers from './../modules';
 
 const app = express();
@@ -13,6 +15,7 @@ const app = express();
 //   app.use(morgan('combined', {stream: accessLogStream}));
 // } else app.use(morgan('dev'));
 
+app.use(express.static(path.join(__dirname, './../build')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
