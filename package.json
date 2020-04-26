@@ -16,7 +16,8 @@
     "nodemon": "^2.0.3"
   },
   "scripts": {
-    "start": "npx nodemon --exec npx babel-node src/app.js"
+    "start": "npx babel-node src/app.js",
+    "dev": "npx nodemon --exec npx babel-node src/app.js"
   },
   "author": "",
   "license": "ISC"
