@@ -1,20 +1,19 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
 var Controller = /*#__PURE__*/function () {
   function Controller(facade) {
-    _classCallCheck(this, Controller);
-
+    (0, _classCallCheck2["default"])(this, Controller);
     this.facade = facade;
   } // istanbul ignore next line
 
 
-  _createClass(Controller, [{
+  (0, _createClass2["default"])(Controller, [{
     key: "_errorHandling",
     value: function _errorHandling(res, err) {
       res.locals.message = err.message;
@@ -97,7 +96,6 @@ var Controller = /*#__PURE__*/function () {
       });
     }
   }]);
-
   return Controller;
 }();
 

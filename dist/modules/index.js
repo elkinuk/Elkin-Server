@@ -1,5 +1,7 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 var _express = _interopRequireDefault(require("express"));
 
 var _path = _interopRequireDefault(require("path"));
@@ -13,8 +15,6 @@ var _routes3 = _interopRequireDefault(require("./contacts/routes.js"));
 var _routes4 = _interopRequireDefault(require("./fiddles/routes.js"));
 
 var _routes5 = _interopRequireDefault(require("./defaults/routes.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var indexRouter = _express["default"].Router();
 

@@ -1,10 +1,10 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 var _mongoose = _interopRequireDefault(require("mongoose"));
 
 var _config = _interopRequireDefault(require("./config"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 _config["default"].listen(4000, function () {
   console.log('...... Listening on port 4000! \n');
