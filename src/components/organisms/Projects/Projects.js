@@ -13,7 +13,7 @@ class Projects extends Component {
   async componentDidMount() {
     const projects = await getData("/api/projects", "defaultProject", true);
     console.log(projects);
-    this.setState(projects);
+    this.setState({projects});
   }
 
   render() {

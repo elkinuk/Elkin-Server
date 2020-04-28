@@ -1,7 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const CollapseBlock = () => (
-  <p>hello</p>
-)
+import CollapseItem from './../CollapseItem/CollapseItem';
 
+import './style.scss';
+
+class CollapseBlock extends Component {
+  state = { 
+    activeCard: 0
+  }
+
+  handleClick = id => {
+    if (id !== this.state.activeCard) {
+      this.setState({activeCard: id});
+    }
+  }
+
+  createGroup(data) {
+    return data.map((item, index) => 
+      <CollapseItem
+          data={item}
+          key={item._id}
+          isActive={this.state.activeCard === index}
+          cardClick={() => handleClick(index)}
+        />
+    );
+  }
+
+  render() { 
+    return ( 
+      <div className="collapse">
+        {this.createGroup(this.props.data)}
+      </div>
+     );
+  }
+}
+ 
 export default CollapseBlock;
