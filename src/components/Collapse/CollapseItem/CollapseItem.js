@@ -15,7 +15,7 @@ class CollapseItem extends Component {
       <div
         className={`card${this.props.isActive ? ' active' : ''}`}
         style={{
-          '--optionBackground': `url("${this.getPic()}")`,
+          //'--optionBackground': `url("${this.getPic()}")`, //fix pictures!!!!
           '--optionColour': this.props.data.iconColour
         }}
         onClick={this.props.handleClick}

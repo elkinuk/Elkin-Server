@@ -5,7 +5,6 @@ const nextApp = next({ dev })
 const handle = nextApp.getRequestHandler()
 
 const appPath = `./${ dev ? 'server' : 'build' }/app.js`;
-console.log(appPath);
 
 const appListen = require(appPath);
 

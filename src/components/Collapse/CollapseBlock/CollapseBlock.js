@@ -9,7 +9,7 @@ class CollapseBlock extends Component {
     activeCard: 0
   }
 
-  handleClick = id => {
+  handleClick(id) {
     if (id !== this.state.activeCard) {
       this.setState({activeCard: id});
     }
@@ -21,7 +21,7 @@ class CollapseBlock extends Component {
           data={item}
           key={item._id}
           isActive={this.state.activeCard === index}
-          cardClick={() => handleClick(index)}
+          handleClick={() => this.handleClick(index)}
         />
     );
   }
