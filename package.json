@@ -5,17 +5,19 @@
   "scripts": {
     "dev": "npx nodemon --exec npx babel-node server.js",
     "clean": "rm -rf build && mkdir build",
-    "build": "next build && cross-env NODE_ENV=production babel src -d build",
+    "build": "next build && cross-env NODE_ENV=production babel server -d build",
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@babel/runtime": "7.9.2",
+    "@zeit/next-sass": "^1.0.1",
     "body-parser": "1.19.0",
     "cross-env": "^7.0.2",
     "express": "4.17.1",
     "mongodb": "3.5.6",
     "mongoose": "5.9.10",
     "next": "9.3.5",
+    "node-sass": "^4.14.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
@@ -23,9 +25,11 @@
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
     "@babel/node": "7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-transform-runtime": "7.9.0",
     "@babel/preset-env": "7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "axios": "^0.19.2",
     "nodemon": "2.0.3"
   }
 }
