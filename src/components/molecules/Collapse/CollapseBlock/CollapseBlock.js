@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import CollapseItem from './../CollapseItem/CollapseItem';
 
-import './style.scss';
+import './style.module.scss';
 
 class CollapseBlock extends Component {
   state = { 

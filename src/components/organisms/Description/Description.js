@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Description = () => <p>Hello there1</p>;
+const Description = () => <p>Description</p>;
 
 export default Description;

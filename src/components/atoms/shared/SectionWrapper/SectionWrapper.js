@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 const SectionWrapper = props => ( 
 	<section className={styles.section}>

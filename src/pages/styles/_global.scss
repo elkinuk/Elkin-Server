@@ -38,23 +38,44 @@ a {
   color: inherit;
 }
 
-.text-align--center {
-  text-align: center;
-}
+:global {
 
-.desctop {
-  display: block;
-}
+  .text-align--center {
+    text-align: center;
+  }
 
-.mobile {
-  display: none;
-}
-@media screen and (max-width: 798px) {
   .desctop {
-    display: none;
+    display: block;
   }
 
   .mobile {
-    display: block;
+    display: none;
+  }
+  @media screen and (max-width: 798px) {
+    .desctop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+    }
+  }
+
+  .moving-cursor:after {
+    margin-left: 3px;
+    content: "_";
+    animation: flicker 0.9s infinite;
+  }
+  
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

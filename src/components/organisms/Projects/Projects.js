@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import SectionWrapper from './../../shared/SectionWrapper';
+import SectionWrapper from './../../atoms/shared/SectionWrapper';
 import CollapseBlock from "./../../molecules/Collapse";
 
 import { getData } from "./../../../assets/utils.js";

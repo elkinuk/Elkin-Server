@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './style.scss';
+import style from './style.module.scss';
+
+import { LinkSimple } from './../../../atoms/shared';
 
 class CollapseItem extends Component {
   getPic() {
@@ -14,22 +16,22 @@ class CollapseItem extends Component {
   render() { 
     return ( 
       <div
-        className={`card${this.props.isActive ? ' active' : ''}`}
+        className={`${style.card} ${(this.props.isActive ? style.active : '')}`}
         style={{
           '--optionBackground': `url("${this.getPic()}")`,
           '--optionColour': this.props.data.iconColour
         }}
         onClick={this.props.handleClick}
       >
-        <div className="label">
-          <div className="icon">
+        <div className={style.label}>
+          <div className={style.icon}>
             <FontAwesomeIcon icon={ this.props.data.icon } />
           </div>
-          <div className="info">
-            <div className="main">{ this.props.data.name }</div>
-            <div className="sub">{ this.props.data.text }</div>
-            <div className="link">
-              link
+          <div className={style.info}>
+            <div className={style.main}>{ this.props.data.name }</div>
+            <div className={style.sub}>{ this.props.data.text }</div>
+            <div className={style.link}>
+              <LinkSimple href={ this.props.data.url }>Let's see</LinkSimple>
             </div>
           </div>
         </div>
