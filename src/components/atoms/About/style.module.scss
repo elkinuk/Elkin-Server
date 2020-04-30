@@ -1,0 +1,8 @@
+.article {
+  font-family: "Consolas";
+
+  @media screen and (max-width: 798px) {
+    font-size: 18px;
+    font-family: "HelveticaNeueCyr";
+  }
+}
