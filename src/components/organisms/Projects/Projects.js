@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import SectionWrapper from './../../shared/SectionWrapper';
-import CollapseBlock from "./../../Collapse";
+import CollapseBlock from "./../../molecules/Collapse";
 
 import { getData } from "./../../../assets/utils.js";
 

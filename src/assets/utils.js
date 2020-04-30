@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const fillFields = (mainObject, ...args) => {
-  const fillerFunction = (mainObject, dafaultObject, transformPicUrl) => {
+  const fillerFunction = (mainObject, defaultObject, transformPicUrl) => {
     const newObject = { ...mainObject };
-    for (let key in dafaultObject) {
-      if (!newObject[key]) newObject[key] = dafaultObject[key];
+    for (let key in defaultObject) {
+      if (!newObject[key]) newObject[key] = defaultObject[key];
       else if (transformPicUrl) {
         if (key === "pic")
           newObject.pic = newObject.pic ? getImg(newObject.pic) : newObject.pic;
@@ -24,7 +24,7 @@ const fillFields = (mainObject, ...args) => {
 };
 
 const getImg = name => {
-  return process.env.BASE_URL + process.env.VUE_APP_IMG_PATH + name;
+  return '/img/' + name;
 };
 
 const getData = async (dataUrl, defaultName, transformPicUrl) => {
