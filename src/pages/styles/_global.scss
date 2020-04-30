@@ -1,0 +1,60 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #191919;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Consolas";
+}
+
+p,
+a {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 300;
+  font-style: normal;
+  color: inherit;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+.desctop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 798px) {
+  .desctop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
