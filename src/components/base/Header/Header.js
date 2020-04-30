@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Logo } from './../../atoms/shared';
+import { Logo, Navigation } from './../../atoms/shared';
 
 import style from  './style.module.scss';
 
@@ -13,7 +13,7 @@ const Header = () => {
         <h2 className="moving-cursor">and I'm a frontend developer</h2>
         <p>Nice to see you here</p>
       </div>
-      {'<Navigation />'}
+      <Navigation />
     </header>
   );
 }
