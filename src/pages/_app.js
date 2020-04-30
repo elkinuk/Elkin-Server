@@ -7,7 +7,7 @@ import './styles/_icons.js';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <Header />
       <Main>
         <Component {...pageProps} />

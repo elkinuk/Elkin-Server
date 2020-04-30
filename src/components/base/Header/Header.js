@@ -8,7 +8,7 @@ const Header = () => {
       {'<Logo />'}
       <div className={ style.title }>
         <h1>Hello, I'm Victoria</h1>
-        <h2 className="moving-ending moving-cursor">and I'm a frontend developer</h2>
+        <h2 className="moving-cursor">and I'm a frontend developer</h2>
         <p>Nice to see you here</p>
       </div>
       {'<Navigation />'}
