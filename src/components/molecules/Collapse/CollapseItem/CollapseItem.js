@@ -14,11 +14,12 @@ class CollapseItem extends Component {
   }
 
   render() { 
+    console.log('render');
     return ( 
       <div
         className={`${style.card} ${(this.props.isActive ? style.active : '')}`}
         style={{
-          '--optionBackground': `url("${this.getPic()}")`,
+          //'--optionBackground': `url("${this.getPic()}")`, // check imgs loading issue
           '--optionColour': this.props.data.iconColour
         }}
         onClick={this.props.handleClick}
