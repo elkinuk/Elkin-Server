@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { Logo } from './../../atoms/shared';
+
 import style from  './style.module.scss';
 
 const Header = () => {
   return ( 
     <header className={ style.header }>
-      {'<Logo />'}
+      <Logo />
       <div className={ style.title }>
         <h1>Hello, I'm Victoria</h1>
         <h2 className="moving-cursor">and I'm a frontend developer</h2>
