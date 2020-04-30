@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './style.scss';
 
@@ -22,7 +23,7 @@ class CollapseItem extends Component {
       >
         <div className="label">
           <div className="icon">
-            { this.props.data.icon }
+            <FontAwesomeIcon icon={ this.props.data.icon } />
           </div>
           <div className="info">
             <div className="main">{ this.props.data.name }</div>

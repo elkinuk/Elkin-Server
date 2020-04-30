@@ -4,8 +4,7 @@ const projects = new mongoose.Schema({
   name: String,
   pic: String,
   picBlur: Array,
-  icon: String,
-  iconType: String,
+  icon: Array,
   text: Number,
   url: Array
 });
