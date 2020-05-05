@@ -1,0 +1,13 @@
+.section {
+  margin: 20px 30px 40px;
+
+  @media screen and (max-width: 798px) {
+    margin: 20px 0 40px;
+  }
+
+  & .title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 35px;
+  }
+}
