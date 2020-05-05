@@ -3,7 +3,7 @@ import React from 'react';
 import { Header, Main, Footer } from './../components/base';
 
 import './style.module.scss';
-import './styles/_icons.js';
+import './../assets/icons.js';
 
 function MyApp({ Component, pageProps }) {
   return (

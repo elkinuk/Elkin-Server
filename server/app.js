@@ -2,8 +2,8 @@ import mongoose from 'mongoose';
 
 import app from './config';
 
-const port = process.env.PORT || 4000;
 const dev = process.env.NODE_ENV !== 'production'
+const port = process.env.PORT || (dev ? 4000 : 4001);
 
 const appListen = handle => {
   
