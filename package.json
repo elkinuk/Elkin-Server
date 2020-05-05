@@ -1,6 +1,10 @@
 {
   "name": "learn-starter",
   "version": "0.1.0",
+  "engines" : {
+    "node" : "14.0.0"
+  },
+  "main": "server.js",
   "private": true,
   "scripts": {
     "dev": "npx nodemon --exec npx babel-node server.js",
