@@ -1,0 +1,23 @@
+.fiddle {
+  padding: 40px 0;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.349);
+
+  &__article {
+    font-family: "HelveticaNeueCyr";
+    font-size: 18px;
+    margin: 40px 0;
+  }
+
+  &__item {
+    width: 80%;
+    margin: auto;
+
+    @media screen and (max-width: 798px) {
+      width: 100%;
+    }
+  }
+
+  &:first-child {
+    padding-top: 1px; // bug with margin collapse
+  }
+}

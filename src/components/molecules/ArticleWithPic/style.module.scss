@@ -1,0 +1,17 @@
+.article {
+  padding: 20px;
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+
+  @media screen and (max-width: 798px) {
+    padding: 20px 0;
+  }
+}
+
+.pic {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
