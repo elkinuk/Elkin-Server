@@ -11,7 +11,7 @@ const Article = props => {
   return ( 
     <article className={ style.article }>
       { props.title ? <h2 className={ style.title }>{ props.title }</h2> : null }
-      { createGroup(props.text) }
+      { props.text ? createGroup(props.text) : null }
     </article>
    );
 }
