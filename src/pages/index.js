@@ -3,14 +3,13 @@ import React from 'react';
 import Projects from './../components/organisms/Projects';
 import Description from './../components/organisms/Description';
 import GreatingBlock from './../components/molecules/GreatingBlock';
-import Planet from './../components/atoms/Planet';
-
+import Skills from './../components/organisms/Skills';
 
 export default function Home() {
   return (
     <>
-      <Planet />
       <GreatingBlock />
+      <Skills />
       <Projects />
       <Description />
     </>
