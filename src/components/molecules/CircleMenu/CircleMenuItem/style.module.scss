@@ -31,25 +31,23 @@ $items-distance: 10px;
     width: inherit;
     height: inherit;
     line-height: $item-size*1.1;
-    color: rgba($item-color, 0.7);
-    background: rgba(white, 0.2);
+    color: rgba($item-color, 0.5);
+    background: rgba(black, 0.15);
+    box-shadow: 0 0 40px 1px rgba(black, 0.6);
     border-radius: 50%;
     text-align: center;
     text-decoration: none;
     font-size: $item-size/2;
     pointer-events: none;
-
     svg {
       transition: 0.2s;
     }
 
     &:hover {
-      box-shadow: 0 0 0 $item-size/40 rgba(white, 0.3);
       color: $item-color;
-      background: rgba(white, 0.3);
 
       svg {
-        transform: scale(1.25);
+        transform: scale(1.2);
       }
     }
   }
