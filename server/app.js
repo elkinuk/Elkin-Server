@@ -1,5 +1,3 @@
-import mongoose from 'mongoose';
-
 import app from './config';
 
 const dev = process.env.NODE_ENV !== 'production'
