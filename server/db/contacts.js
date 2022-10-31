@@ -14,7 +14,7 @@ export default {
           "_id":{
              "$oid":"5ea0980feca3ca2dd7e7c783"
           },
-          "url":"https://www.linkedin.com/in/victoriabudyonnaya/",
+          "url":"https://www.linkedin.com/in/viktoriabudennaya",
           "icon":[
              "fab",
              "linkedin"
@@ -49,16 +49,6 @@ export default {
              "fas",
              "envelope"
           ]
-       },
-       {
-         "_id":{
-            "$oid":"5ea0980feca3ca2dd7e7c786"
-         },
-         "url":"mailto:elkin.life@gmail.com",
-         "icon":[
-            "fas",
-            "envelope"
-         ]
-      }
+       }
     ]
  }
