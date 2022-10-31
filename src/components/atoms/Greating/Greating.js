@@ -18,7 +18,7 @@ const Greating = () => {
 
   useEffect(() => {
     if (isTitleTyping) {
-      const typeTitile = () => typeText(titleRef, ['Hello', 1000, 'Hello, my name is Victoria', 500, switchClass]);
+      const typeTitile = () => typeText(titleRef, ['Hello', 1000, 'Hello, my name is Viktoria', 500, switchClass]);
     
       typeText(subtitleRef, [typeTitile, 1000, 'and I\'m a frontend developer', showComment]);
     }
