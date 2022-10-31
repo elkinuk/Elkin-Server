@@ -1,0 +1,18 @@
+.greating {
+  text-align: center;
+  margin: auto;
+  min-height: 160px;
+
+  .title {
+    font-size: 60px;
+  }
+
+  .subtitle {
+    font-size: 40px;
+  }
+
+  .comment {
+    font-size: 20px;
+    opacity: 0;
+  }
+}

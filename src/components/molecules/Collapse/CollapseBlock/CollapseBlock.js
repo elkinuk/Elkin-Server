@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import CollapseItem from './../CollapseItem/CollapseItem';
 
-import './style.module.scss';
+import style from './style.module.scss';
 
 class CollapseBlock extends Component {
   state = { 
@@ -28,7 +28,7 @@ class CollapseBlock extends Component {
 
   render() { 
     return ( 
-      <div className="collapse">
+      <div className={style.collapse}>
         {this.createGroup(this.props.data)}
       </div>
      );

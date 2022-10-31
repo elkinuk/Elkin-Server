@@ -1,9 +1,16 @@
 import express from 'express';
-import req from './controlles.js';
+import data from './../../db/projects';
 
 const router = express.Router();
 
 router.route('/')
-  .get((...args) => req.getAllData(...args))
+  .get((req, res, next) => {
+    try{
+      res.send(data.data)
+    } catch(error) {
+      next(error);
+    }
+  })
+
 
 module.exports = router

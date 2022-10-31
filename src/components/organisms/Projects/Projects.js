@@ -17,7 +17,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <SectionWrapper title="My projects">
+      <SectionWrapper title="My pet projects">
         <CollapseBlock data={this.state.projects} />
       </SectionWrapper>
     );

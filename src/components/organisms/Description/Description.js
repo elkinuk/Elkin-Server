@@ -4,7 +4,9 @@ import PapersBlock from './../../molecules/Papers';
 import About from './../../atoms/About';
 
 const Description = () => (
-  <PapersBlock top={<About />} right={<About />} bottom={<About />} left={<About />} />
+  <>
+    <About />
+  </>
 );
 
 export default Description;

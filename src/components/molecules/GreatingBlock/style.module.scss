@@ -1,0 +1,12 @@
+.block {
+  height: calc(100vh - 230px);
+  min-height: 300px;
+  max-height: 1000px;
+  display: flex;
+  margin-bottom: 150px;
+
+  @media screen and (max-width: 798px) {
+    height: calc(100vh - 100px);
+    margin-bottom: 60px;
+  }
+}
