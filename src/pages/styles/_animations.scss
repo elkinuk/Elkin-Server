@@ -1,5 +1,5 @@
 
-@keyframes :global(flickering) { // to allow see proper name globally
+@keyframes flickering { // to allow see proper name globally
   0% {
     opacity: 1;
   }
@@ -11,7 +11,7 @@
   }
 }
 
-@keyframes :global(fadeIn) { // to allow see proper name globally
+@keyframes fadeIn { // to allow see proper name globally
   0% {
     opacity: 0;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-:global {
+
   .moving-cursor:after {
     margin-left: 3px;
     content: "_" !important;
@@ -31,4 +31,3 @@
   .fadeIn {
     animation: fadeIn 2s 0.7s forwards;
   }
-}
