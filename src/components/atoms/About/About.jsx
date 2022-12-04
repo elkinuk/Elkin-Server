@@ -1,8 +1,6 @@
 import React from 'react';
 
-import {
-  SectionWrapper, Article,
-} from '../shared';
+import { SectionWrapper, Article } from '../shared';
 
 import style from './style.module.scss';
 

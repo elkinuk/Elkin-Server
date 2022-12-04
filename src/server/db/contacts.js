@@ -1,9 +1,6 @@
-export default {
-    "data":[
+export default {"data":[
        {
-          "_id":{
-             "$oid":"5ea0980feca3ca2dd7e7c782"
-          },
+          "_id":{"$oid":"5ea0980feca3ca2dd7e7c782"},
           "url":"https://www.facebook.com/vichkary",
           "icon":[
              "fab",
@@ -11,9 +8,7 @@ export default {
           ]
        },
        {
-          "_id":{
-             "$oid":"5ea0980feca3ca2dd7e7c783"
-          },
+          "_id":{"$oid":"5ea0980feca3ca2dd7e7c783"},
           "url":"https://www.linkedin.com/in/viktoriabudennaya",
           "icon":[
              "fab",
@@ -21,9 +16,7 @@ export default {
           ]
        },
        {
-          "_id":{
-             "$oid":"5ea0980feca3ca2dd7e7c784"
-          },
+          "_id":{"$oid":"5ea0980feca3ca2dd7e7c784"},
           "url":"https://www.instagram.com/elkin.uk/",
           "icon":[
              "fab",
@@ -31,9 +24,7 @@ export default {
           ]
        },
        {
-          "_id":{
-             "$oid":"5ea0980feca3ca2dd7e7c785"
-          },
+          "_id":{"$oid":"5ea0980feca3ca2dd7e7c785"},
           "url":"https://github.com/elkinny",
           "icon":[
              "fab",
@@ -41,14 +32,11 @@ export default {
           ]
        },
        {
-          "_id":{
-             "$oid":"5ea0980feca3ca2dd7e7c786"
-          },
+          "_id":{"$oid":"5ea0980feca3ca2dd7e7c786"},
           "url":"mailto:elkin.working@gmail.com",
           "icon":[
              "fas",
              "envelope"
           ]
        }
-    ]
- }
+    ]}

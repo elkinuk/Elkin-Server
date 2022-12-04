@@ -2,15 +2,11 @@ import React from 'react';
 
 import Planets from './Planets';
 
-const Planet = (props) => {
+const Planet = ({ planet }) => {
   let PlanetComponent;
 
-  function getRandomArbitrary(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
-  }
-
-  if (props.planet && props.planet < Planets.length) {
-    PlanetComponent = Planets[props.planet];
+  if (planet && planet < Planets.length) {
+    PlanetComponent = Planets[planet];
   } else PlanetComponent = Planets[0];
 
   return (<PlanetComponent />);

@@ -5,7 +5,7 @@ import Planet from '../../atoms/Planet';
 
 const PlanetsParade = ({ data }) => {
   const createGroup = () => data.map((el, i) => (
-    <div className={style['planet-container']} key={i + el.title}>
+    <div className={style['planet-container']} key={el.title}>
       <h3>{ el.title }</h3>
       <p className={style.subtitle}>{ el.subtitle }</p>
       <div className={style.planet}><Planet planet={i} /></div>

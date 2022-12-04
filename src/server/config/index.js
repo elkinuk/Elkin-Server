@@ -1,6 +1,6 @@
 import express from 'express';
 
-import routers from './../modules';
+import routers from '../modules';
 
 const app = express();
 
@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/', routers.indexRouter);
 
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   res.locals.message = err.message;
   res.locals.status = err.status || 500;
 
@@ -17,4 +17,4 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
-module.exports = app;
+export default app;

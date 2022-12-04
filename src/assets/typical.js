@@ -7,9 +7,7 @@ async function wait(ms) {
 
 function* editor(edits) {
   for (const editInstance of edits) {
-    yield (node) => requestAnimationFrame(() => ({
-      ...node, textContent: editInstance,
-    }));
+    yield (node) => requestAnimationFrame(() => ({ ...node, textContent: editInstance }));
   }
 }
 

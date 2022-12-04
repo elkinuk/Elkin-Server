@@ -1,9 +1,6 @@
-export default {
-    "data":[
+export default {"data":[
        {
-          "_id":{
-             "$oid":"5ea097ebeca3ca2dd7e7c77d"
-          },
+          "_id":{"$oid":"5ea097ebeca3ca2dd7e7c77d"},
           "name":"Slender",
           "pic":"slender-screen.png",
           "picBlur":"slender-screen-blur.jpg",
@@ -15,9 +12,7 @@ export default {
           "url":"https://dmitry-white.github.io/Slender/"
        },
        {
-          "_id":{
-             "$oid":"5ea097ebeca3ca2dd7e7c77e"
-          },
+          "_id":{"$oid":"5ea097ebeca3ca2dd7e7c77e"},
           "name":"News app",
           "pic":"news-app-screen.png",
           "picBlur":"news-app-screen-blur.jpg",
@@ -29,9 +24,7 @@ export default {
           "iconColour":"#ffce54"
        },
        {
-          "_id":{
-             "$oid":"5ea097ebeca3ca2dd7e7c77f"
-          },
+          "_id":{"$oid":"5ea097ebeca3ca2dd7e7c77f"},
           "name":"News app",
           "pic":"news-app-ng-screen.png",
           "picBlur":"news-app-ng-screen-blur.jpg",
@@ -44,9 +37,7 @@ export default {
           "iconColour":"#ed5565"
        },
        {
-          "_id":{
-             "$oid":"5ea097ebeca3ca2dd7e7c780"
-          },
+          "_id":{"$oid":"5ea097ebeca3ca2dd7e7c780"},
           "name":"Movie app",
           "icon":[
              "fab",
@@ -56,9 +47,7 @@ export default {
           "url":"#"
        },
        {
-          "_id":{
-             "$oid":"5ea097ebeca3ca2dd7e7c781"
-          },
+          "_id":{"$oid":"5ea097ebeca3ca2dd7e7c781"},
           "name":"Movie app",
           "pic":"movie-app-vue-screen.png",
           "picBlur":"movie-app-vue-screen-blur.jpg",
@@ -70,5 +59,4 @@ export default {
           ],
           "iconColour":"#2ecc71"
        }
-    ]
- }
+    ]}

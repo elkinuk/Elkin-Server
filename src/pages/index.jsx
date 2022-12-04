@@ -2,16 +2,16 @@ import React from 'react';
 
 import Projects from '../components/organisms/Projects';
 import Description from '../components/organisms/Description';
-import GreatingBlock from '../components/molecules/GreatingBlock';
+import GreetingsBlock from '../components/molecules/GreetingsBlock';
 import Skills from '../components/organisms/Skills';
 
-export default function Home() {
-  return (
-    <>
-      <GreatingBlock />
-      <Skills />
-      <Projects />
-      <Description />
-    </>
-  );
-}
+const Home = () => (
+  <>
+    <GreetingsBlock />
+    <Skills />
+    <Projects />
+    <Description />
+  </>
+);
+
+export default Home;

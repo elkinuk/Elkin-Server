@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from './style.module.scss';
 
-const SectionWrapper = (props) => (
+const SectionWrapper = ({ title, children }) => (
   <section className={styles.section}>
-    { props.title ? <h1 className={styles.title}>{ props.title }</h1> : null }
-    { props.children }
+    { title ? <h1 className={styles.title}>{ title }</h1> : null }
+    { children }
   </section>
 );
 

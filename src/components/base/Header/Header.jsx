@@ -1,8 +1,6 @@
 import React from 'react';
 
-import {
-  Logo, Navigation,
-} from '../../atoms/shared';
+import { Logo } from '../../atoms/shared';
 
 import style from './style.module.scss';
 

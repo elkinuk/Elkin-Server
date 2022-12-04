@@ -1,55 +1,50 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import CircleMenuItem from '../CircleMenuItem/CircleMenuItem';
-import { getData } from '../../../../assets/utils.js';
+import { getData } from '../../../../assets/utils';
 
 import style from './style.module.scss';
 
-class CircleMenuBlock extends Component {
-  state = {
-    contacts: [],
-    isOpen: false,
+const CircleMenuBlock = () => {
+  const [contacts, setContacts] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(async () => {
+    const newContacts = await getData('/api/contacts');
+    setContacts(newContacts);
+  }, []);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
   };
 
-  async componentDidMount() {
-    const contacts = await getData('/api/contacts');
-    this.setState({ contacts });
-  }
+  const createGroup = (data) => data.map((el) => (
+    <CircleMenuItem
+      key={el._id}
+      isOpen={isOpen}
+      contact={el}
+    />
+  ));
 
-  handleClick() {
-    this.setState((prevState) => ({ isOpen: !prevState.isOpen }));
-  }
-
-  createGroup(data) {
-    return data.map((el) => (
-      <CircleMenuItem
-        key={el._id}
-        isOpen={this.state.isOpen}
-        contact={el}
+  return (
+    <nav className={style.menu}>
+      <input
+        className={style['menu-toggler']}
+        id="menu-toggler"
+        type="checkbox"
+        value={isOpen}
+        onChange={() => handleClick()}
       />
-    ));
-  }
-
-  render() {
-    return (
-      <nav className={style.menu}>
-        <input
-          className={style['menu-toggler']}
-          id="menu-toggler"
-          type="checkbox"
-          value={this.state.isOpen}
-          onChange={() => this.handleClick()}
-        />
-        <label htmlFor="menu-toggler">
-          <FontAwesomeIcon icon={['far', 'envelope']} />
-        </label>
-        <ul>
-          { this.createGroup(this.state.contacts) }
-        </ul>
-      </nav>
-    );
-  }
-}
+      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+      <label htmlFor="menu-toggler">
+        <FontAwesomeIcon icon={['far', 'envelope']} />
+      </label>
+      <ul>
+        { createGroup(contacts) }
+      </ul>
+    </nav>
+  );
+};
 
 export default CircleMenuBlock;

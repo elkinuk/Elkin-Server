@@ -8,8 +8,9 @@ const appListen = handle => {
   app.get('*', (req, res) => handle(req, res)); // for SSR
 
   app.listen(port, () => {
+    // eslint-disable-next-line no-console
     console.log(`...... Listening on port ${port}! \n`);
   });
 }
 
-module.exports = appListen;
+export default appListen;

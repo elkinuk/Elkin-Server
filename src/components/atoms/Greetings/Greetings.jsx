@@ -5,7 +5,7 @@ import { type } from '../../../assets/typical';
 
 import style from './style.module.scss';
 
-const Greating = () => {
+const Greetings = () => {
   const typeText = (elRef, steps) => type(elRef.current, ...steps);
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
@@ -28,11 +28,11 @@ const Greating = () => {
 
   return (
     <div className={style.greating}>
-      <h1 ref={titleRef} className={`${style.title} ${isTitleTyping ? 'moving-cursor' : ''} `} />
-      <h2 ref={subtitleRef} className={`${style.subtitle} ${!isTitleTyping ? 'moving-cursor' : ''} `} />
+      <p ref={titleRef} className={`${style.title} ${isTitleTyping ? 'moving-cursor' : ''} `} />
+      <p ref={subtitleRef} className={`${style.subtitle} ${!isTitleTyping ? 'moving-cursor' : ''} `} />
       <p className={`${style.comment} ${isCommentShown ? 'fadeIn' : ''}`}>Nice to see you here</p>
     </div>
   );
 };
 
-export default Greating;
+export default Greetings;

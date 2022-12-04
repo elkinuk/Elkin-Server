@@ -4,9 +4,9 @@ import CircleMenu from '../../molecules/CircleMenu';
 
 import style from './style.module.scss';
 
-const Main = (props) => (
+const Main = ({ children }) => (
   <main className={style.main}>
-    { props.children }
+    { children }
     <CircleMenu />
   </main>
 );

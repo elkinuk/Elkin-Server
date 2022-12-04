@@ -1,5 +1,5 @@
 import express from 'express';
-import data from './../../db/defaults';
+import data from '../../db/defaults';
 
 const router = express.Router();
 
@@ -13,4 +13,4 @@ router.route('/')
   })
 
 
-module.exports = router
+export default router

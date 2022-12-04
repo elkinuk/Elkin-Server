@@ -3,22 +3,21 @@ import Link from 'next/link';
 
 import style from './style.module.scss';
 
-const LinkSimple = (props) => (
-  <>
-    {
-    props.href
-      ? (
-        <a v-if="href" className={style.link} href={props.href} target="_blank" rel="noreferrer">
-          { props.children }
-        </a>
-      )
-      : (
-        <Link href={props.to}>
-          <a className={`${style.link} ${style['link--router']}`}>{ props.children }</a>
-        </Link>
-      )
-  }
-  </>
+const LinkSimple = ({
+  href, children, to,
+}) => (
+
+  href
+    ? (
+      <a className={style.link} href={href} target="_blank" rel="noreferrer">
+        { children }
+      </a>
+    )
+    : (
+      <Link href={to}>
+        <span className={`${style.link} ${style['link--router']}`}>{ children }</span>
+      </Link>
+    )
 );
 
 export default LinkSimple;

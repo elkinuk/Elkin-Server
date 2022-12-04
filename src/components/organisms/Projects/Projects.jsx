@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SectionWrapper } from '../../atoms/shared';
 import CollapseBlock from '../../molecules/Collapse';
 
-import { getData } from '../../../assets/utils.js';
+import { getData } from '../../../assets/utils';
 
-class Projects extends Component {
-  state = { projects: [] };
+const Projects = () => {
+  const [projects, setProjects] = useState([]);
 
-  async componentDidMount() {
-    const projects = await getData('/api/projects', 'defaultProject', true);
-    this.setState({ projects });
-  }
+  useEffect(async () => {
+    const newProjects = await getData('/api/projects', 'defaultProject', true);
+    setProjects(newProjects);
+  });
 
-  render() {
-    return (
-      <SectionWrapper title="My pet projects">
-        <CollapseBlock data={this.state.projects} />
-      </SectionWrapper>
-    );
-  }
-}
+  return (
+    <SectionWrapper title="My pet projects">
+      <CollapseBlock data={projects} />
+    </SectionWrapper>
+  );
+};
 
 export default Projects;

@@ -1,9 +1,6 @@
-export default {
-    "data":[
+export default {"data":[
        {
-          "_id":{
-             "$oid":"5ea098efeca3ca2dd7e7c78b"
-          },
+          "_id":{"$oid":"5ea098efeca3ca2dd7e7c78b"},
           "id":"defaultFiddle",
           "data":{
              "keyHash":"nLzf164h",
@@ -20,9 +17,7 @@ export default {
           }
        },
        {
-          "_id":{
-             "$oid":"5ea098efeca3ca2dd7e7c78c"
-          },
+          "_id":{"$oid":"5ea098efeca3ca2dd7e7c78c"},
           "id":"defaultPost",
           "data":{
              "title":"LALALLA",
@@ -34,9 +29,7 @@ export default {
           }
        },
        {
-          "_id":{
-             "$oid":"5ea098efeca3ca2dd7e7c78d"
-          },
+          "_id":{"$oid":"5ea098efeca3ca2dd7e7c78d"},
           "id":"defaultProject",
           "data":{
              "name":"Project name",
@@ -51,5 +44,4 @@ export default {
              "picBlur":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
           }
        }
-    ]
- }
+    ]}

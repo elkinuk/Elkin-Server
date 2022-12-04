@@ -1,8 +1,8 @@
 import express from 'express';
 
-import projectsRouter from './projects/routes.js';
-import contactsRouter from './contacts/routes.js';
-import defaultsRouter from './defaults/routes.js';
+import projectsRouter from './projects/routes';
+import contactsRouter from './contacts/routes';
+import defaultsRouter from './defaults/routes';
 
 const indexRouter = express.Router();
 
@@ -11,6 +11,6 @@ indexRouter.use('/api/contacts', contactsRouter);
 indexRouter.use('/api/defaults', defaultsRouter);
 indexRouter.all('/api/*', (_, res) => { res.send('No such Endpoint'); });
 
-//indexRouter.all('*', (_, res) => { res.send(path.join(__dirname, './../build/index.html')); });
+// indexRouter.all('*', (_, res) => { res.send(path.join(__dirname, './../build/index.html')); });
 
-module.exports.indexRouter = indexRouter;
+export default indexRouter;

@@ -2,13 +2,13 @@ import React from 'react';
 
 import style from './style.module.scss';
 
-const Article = (props) => {
-  const createGroup = (data) => data.map((el, index) => (<p className={style.paragraph} key={index}>{ el }</p>));
+const Article = ({ title, text }) => {
+  const createGroup = (data) => data.map((el) => (<p className={style.paragraph} key={el}>{ el }</p>));
 
   return (
     <article className={style.article}>
-      { props.title ? <h2 className={style.title}>{ props.title }</h2> : null }
-      { props.text ? createGroup(props.text) : null }
+      { title ? <h2 className={style.title}>{ title }</h2> : null }
+      { text ? createGroup(text) : null }
     </article>
   );
 };

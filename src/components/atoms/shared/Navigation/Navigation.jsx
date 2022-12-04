@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LinkSimple } from '..';
+import LinkSimple from '../LinkSimple/LinkSimple';
 
 import style from './style.module.scss';
 

@@ -1,9 +1,6 @@
-
 const withFonts = require('nextjs-fonts');
 
-module.exports = withFonts({
-  cssModules: true,
-  webpack(config, options) {
+export default withFonts({cssModules: true,
+  webpack(config) {
     return config;
-  }
-});
+  },});

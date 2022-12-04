@@ -4,8 +4,8 @@ import ParalaxItem from '../ParalaxItem/ParalaxItem';
 
 import style from './style.module.scss';
 
-const ParalaxBlock = (props) => {
-  const createGroup = (data) => data.map((el) => (
+const ParalaxBlock = ({ data }) => {
+  const createGroup = (groupData) => groupData.map((el) => (
     <ParalaxItem
       key={el._id}
       index={el.id}
@@ -17,7 +17,7 @@ const ParalaxBlock = (props) => {
 
   return (
     <div className={style['paralax-container']}>
-      { createGroup(props.data) }
+      { createGroup(data) }
     </div>
   );
 };

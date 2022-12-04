@@ -1,5 +1,5 @@
 import express from 'express';
-import data from './../../db/contacts';
+import data from '../../db/projects';
 
 const router = express.Router();
 
@@ -12,4 +12,4 @@ router.route('/')
     }
   })
 
-module.exports = router
+export default router;
