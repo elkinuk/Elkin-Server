@@ -5,4 +5,11 @@ import PlanetFour from './Planet4';
 import PlanetFive from './Planet5';
 import PlanetSix from './Planet6';
 
-export default [PlanetOne, PlanetTwo, PlanetThree, PlanetFour, PlanetFive, PlanetSix];
+export default [
+  PlanetOne,
+  PlanetTwo,
+  PlanetThree,
+  PlanetFour,
+  PlanetFive,
+  PlanetSix,
+];

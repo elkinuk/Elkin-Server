@@ -4,8 +4,8 @@ import styles from './style.module.scss';
 
 const SectionWrapper = ({ title, children }) => (
   <section className={styles.section}>
-    { title ? <h1 className={styles.title}>{ title }</h1> : null }
-    { children }
+    {title ? <h1 className={styles.title}>{title}</h1> : null}
+    {children}
   </section>
 );
 

@@ -3,11 +3,7 @@ import React from 'react';
 import style from './style.module.scss';
 
 const Logo = () => (
-  <a
-    href="https://github.com/elkinny"
-    target="_blank"
-    rel="noreferrer"
-  >
+  <a href="https://github.com/elkinny" target="_blank" rel="noreferrer">
     <img
       className={style.logo}
       src="/img/orca.png"

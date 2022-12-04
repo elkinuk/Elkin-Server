@@ -10,7 +10,9 @@ const fillFields = (mainObject, ...args) => {
     for (const key in defaultObject) {
       if (!newObject[key]) newObject[key] = defaultObject[key];
       else if (transformPicUrl) {
-        if (key === 'pic') { newObject.pic = newObject.pic ? getImg(newObject.pic) : newObject.pic; }
+        if (key === 'pic') {
+          newObject.pic = newObject.pic ? getImg(newObject.pic) : newObject.pic;
+        }
         if (key === 'picBlur') {
           newObject.picBlur = newObject.picBlur
             ? getImg(newObject.picBlur)
@@ -39,6 +41,4 @@ const getData = async (dataUrl, defaultName, transformPicUrl) => {
   return data;
 };
 
-export {
-  fillFields, getImg, getData,
-};
+export { fillFields, getImg, getData };

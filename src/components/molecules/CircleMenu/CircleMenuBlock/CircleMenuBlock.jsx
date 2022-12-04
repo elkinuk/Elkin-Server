@@ -19,13 +19,10 @@ const CircleMenuBlock = () => {
     setIsOpen(!isOpen);
   };
 
-  const createGroup = (data) => data.map((el) => (
-    <CircleMenuItem
-      key={el._id}
-      isOpen={isOpen}
-      contact={el}
-    />
-  ));
+  const createGroup = (data) =>
+    data.map((el) => (
+      <CircleMenuItem key={el._id} isOpen={isOpen} contact={el} />
+    ));
 
   return (
     <nav className={style.menu}>
@@ -40,9 +37,7 @@ const CircleMenuBlock = () => {
       <label htmlFor="menu-toggler">
         <FontAwesomeIcon icon={['far', 'envelope']} />
       </label>
-      <ul>
-        { createGroup(contacts) }
-      </ul>
+      <ul>{createGroup(contacts)}</ul>
     </nav>
   );
 };

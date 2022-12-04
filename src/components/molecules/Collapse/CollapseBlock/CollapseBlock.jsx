@@ -13,20 +13,17 @@ const CollapseBlock = ({ data }) => {
     }
   };
 
-  const createGroup = (groupData) => groupData.map((item, index) => (
-    <CollapseItem
-      data={item}
-      key={item._id}
-      isActive={activeCard === index}
-      handleClick={() => handleClick(index)}
-    />
-  ));
+  const createGroup = (groupData) =>
+    groupData.map((item, index) => (
+      <CollapseItem
+        data={item}
+        key={item._id}
+        isActive={activeCard === index}
+        handleClick={() => handleClick(index)}
+      />
+    ));
 
-  return (
-    <div className={style.collapse}>
-      {createGroup(data)}
-    </div>
-  );
+  return <div className={style.collapse}>{createGroup(data)}</div>;
 };
 
 export default CollapseBlock;

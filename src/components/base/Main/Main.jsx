@@ -6,7 +6,7 @@ import style from './style.module.scss';
 
 const Main = ({ children }) => (
   <main className={style.main}>
-    { children }
+    {children}
     <CircleMenu />
   </main>
 );

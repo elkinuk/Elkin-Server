@@ -9,7 +9,7 @@ const Planet = ({ planet }) => {
     PlanetComponent = Planets[planet];
   } else PlanetComponent = Planets[0];
 
-  return (<PlanetComponent />);
+  return <PlanetComponent />;
 };
 
 export default Planet;

@@ -7,7 +7,8 @@ async function wait(ms) {
 
 function* editor(edits) {
   for (const editInstance of edits) {
-    yield (node) => requestAnimationFrame(() => ({ ...node, textContent: editInstance }));
+    yield (node) =>
+      requestAnimationFrame(() => ({ ...node, textContent: editInstance }));
   }
 }
 
@@ -36,10 +37,10 @@ function getOverlap(start, [...end]) {
 
 async function edit(node, text) {
   const overlap = getOverlap(node.textContent, text);
-  await perform(
-    node,
-    [...deleter(node.textContent, overlap), ...writer(text, overlap)],
-  );
+  await perform(node, [
+    ...deleter(node.textContent, overlap),
+    ...writer(text, overlap),
+  ]);
 }
 
 async function type(node, ...args) {
@@ -60,6 +61,4 @@ async function type(node, ...args) {
   }
 }
 
-export {
-  type, editor, writer, deleter, getOverlap,
-};
+export { type, editor, writer, deleter, getOverlap };

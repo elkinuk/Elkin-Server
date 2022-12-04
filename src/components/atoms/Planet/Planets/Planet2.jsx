@@ -18,7 +18,11 @@ const PlanetTwo = () => (
     <circle cx="50" cy="50" r="40" fill="url(#bodyGradient2)" />
     <circle cx="40" cy="30" r="8" fill="#3c94f8" />
     <circle cx="59" cy="50" r="6" fill="#41a5fb" />
-    <path d="M50 10A40 40 0 1 0 50 90 25 35 0 1 1 50 10z" fill="black" opacity="0.2" />
+    <path
+      d="M50 10A40 40 0 1 0 50 90 25 35 0 1 1 50 10z"
+      fill="black"
+      opacity="0.2"
+    />
 
     <circle cx="80" cy="80" r="15" fill="#fefefe" />
     <circle cx="83" cy="87" r="5" fill="#d4eefd" />

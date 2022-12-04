@@ -14,8 +14,11 @@ const Skills = () => {
   ];
 
   data = data.map((el) => {
-    const years = (new Date()).getFullYear() - el.since;
-    return { ...el, subtitle: `${years > 0 ? years : 1} ${years > 1 ? 'years' : 'year'}` };
+    const years = new Date().getFullYear() - el.since;
+    return {
+      ...el,
+      subtitle: `${years > 0 ? years : 1} ${years > 1 ? 'years' : 'year'}`,
+    };
   });
 
   return (

@@ -1,8 +1,6 @@
 import React from 'react';
 
-import {
-  Header, Main, Footer,
-} from '../components/base';
+import { Header, Main, Footer } from '../components/base';
 
 import './style.scss';
 import '../assets/icons';

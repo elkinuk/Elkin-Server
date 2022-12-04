@@ -13,7 +13,11 @@ class ParalaxItem extends Component {
   }
 
   state = {
-    width: 0, height: 0, mouseX: 0, mouseY: 0, mouseLeaveDelay: null,
+    width: 0,
+    height: 0,
+    mouseX: 0,
+    mouseY: 0,
+    mouseLeaveDelay: null,
   };
 
   mousePX() {
@@ -41,10 +45,13 @@ class ParalaxItem extends Component {
   }
 
   handleMouseMove(e) {
-    const mouseX = e.pageX - this.cardRef.current.offsetLeft - this.state.width / 2;
-    const mouseY = e.pageY - this.cardRef.current.offsetTop - this.state.height / 2;
+    const mouseX =
+      e.pageX - this.cardRef.current.offsetLeft - this.state.width / 2;
+    const mouseY =
+      e.pageY - this.cardRef.current.offsetTop - this.state.height / 2;
     this.setState({
-      mouseX, mouseY,
+      mouseX,
+      mouseY,
     });
   }
 
@@ -83,8 +90,8 @@ class ParalaxItem extends Component {
           <div className={style.card} style={this.cardStyle()}>
             <div className={style.bg} style={this.cardBgStyle()} />
             <div className={style.info}>
-              <h2 className={style.header}>{ this.props.title }</h2>
-              <p className={style.content}>{ this.props.subTitle }</p>
+              <h2 className={style.header}>{this.props.title}</h2>
+              <p className={style.content}>{this.props.subTitle}</p>
             </div>
           </div>
         </div>

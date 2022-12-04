@@ -3,7 +3,14 @@ import React from 'react';
 const PlanetFive = () => (
   <svg height="100" width="120">
     <defs>
-      <linearGradient id="bodyGradient5-1" x1="0" y1="0" x2="0" y2="1.2" gradientTransform="rotate(-30)">
+      <linearGradient
+        id="bodyGradient5-1"
+        x1="0"
+        y1="0"
+        x2="0"
+        y2="1.2"
+        gradientTransform="rotate(-30)"
+      >
         <stop offset="0%" style={{ stopColor: '#fbfbfb' }} />
         <stop stopOpacity="0" offset="100%" style={{ stopColor: '#581588' }} />
       </linearGradient>
