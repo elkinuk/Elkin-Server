@@ -1,10 +1,10 @@
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 import {
   faUserAstronaut,
   faEnvelope as faEnvelopeSolid,
-  faGamepad
-} from "@fortawesome/free-solid-svg-icons";
+  faGamepad,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faReact,
   faAngular,
@@ -14,9 +14,9 @@ import {
   faLinkedin,
   faInstagram,
   faGithub,
-  faCodepen
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+  faCodepen,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 library.add(
   faUserAstronaut,
@@ -31,5 +31,5 @@ library.add(
   faInstagram,
   faGithub,
   faCodepen,
-  faGamepad
+  faGamepad,
 );

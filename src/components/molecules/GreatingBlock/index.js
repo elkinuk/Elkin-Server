@@ -1,3 +1,3 @@
-import GreatingBlock from './GreatingBlock'
+import GreatingBlock from './GreatingBlock';
 
 export default GreatingBlock;

@@ -1,3 +1,3 @@
-import Fiddle from './Fiddle'
+import Fiddle from './Fiddle';
 
 export default Fiddle;

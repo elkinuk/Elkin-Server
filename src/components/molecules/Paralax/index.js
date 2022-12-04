@@ -1,3 +1,3 @@
-import ParalaxBlock from './ParalaxBlock/ParalaxBlock'
+import ParalaxBlock from './ParalaxBlock/ParalaxBlock';
 
 export default ParalaxBlock;

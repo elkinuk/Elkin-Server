@@ -1,3 +1,3 @@
-import CollapseBlock from "./CollapseBlock/CollapseBlock";
+import CollapseBlock from './CollapseBlock/CollapseBlock';
 
 export default CollapseBlock;

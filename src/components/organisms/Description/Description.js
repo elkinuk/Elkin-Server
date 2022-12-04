@@ -1,12 +1,10 @@
 import React from 'react';
 
-import PapersBlock from './../../molecules/Papers';
-import About from './../../atoms/About';
+import PapersBlock from '../../molecules/Papers';
+import About from '../../atoms/About';
 
 const Description = () => (
-  <>
-    <About />
-  </>
+  <About />
 );
 
 export default Description;

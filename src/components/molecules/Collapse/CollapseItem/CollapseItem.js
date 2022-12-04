@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import style from './style.module.scss';
 
-import { LinkSimple } from './../../../atoms/shared';
+import { LinkSimple } from '../../../atoms/shared';
 
 class CollapseItem extends Component {
   getPic() {
@@ -13,25 +13,25 @@ class CollapseItem extends Component {
     return this.props.isActive || !currentBlur ? current : currentBlur;
   }
 
-  render() { 
-    return ( 
+  render() {
+    return (
       <div
         className={`${style.card} ${(this.props.isActive ? style.active : '')}`}
         style={{
           '--optionBackground': `url("${this.getPic()}")`,
-          '--optionColour': this.props.data.iconColour
+          '--optionColour': this.props.data.iconColour,
         }}
         onClick={this.props.handleClick}
       >
         <div className={style.label}>
           <div className={style.icon}>
-            <FontAwesomeIcon icon={ this.props.data.icon } />
+            <FontAwesomeIcon icon={this.props.data.icon} />
           </div>
           <div className={style.info}>
             <div className={style.main}>{ this.props.data.name }</div>
             <div className={style.sub}>{ this.props.data.text }</div>
             <div className={style.link}>
-              <LinkSimple href={ this.props.data.url }>Let's see</LinkSimple>
+              <LinkSimple href={this.props.data.url}>Let's see</LinkSimple>
             </div>
           </div>
         </div>
@@ -39,5 +39,5 @@ class CollapseItem extends Component {
     );
   }
 }
- 
+
 export default CollapseItem;

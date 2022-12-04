@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Projects from './../components/organisms/Projects';
-import Description from './../components/organisms/Description';
-import GreatingBlock from './../components/molecules/GreatingBlock';
-import Skills from './../components/organisms/Skills';
+import Projects from '../components/organisms/Projects';
+import Description from '../components/organisms/Description';
+import GreatingBlock from '../components/molecules/GreatingBlock';
+import Skills from '../components/organisms/Skills';
 
 export default function Home() {
   return (
@@ -13,5 +13,5 @@ export default function Home() {
       <Projects />
       <Description />
     </>
-  )
+  );
 }

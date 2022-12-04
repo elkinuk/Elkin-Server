@@ -2,7 +2,7 @@ import React from 'react';
 
 import Planets from './Planets';
 
-const Planet = props => {
+const Planet = (props) => {
   let PlanetComponent;
 
   function getRandomArbitrary(min, max) {
@@ -13,7 +13,7 @@ const Planet = props => {
     PlanetComponent = Planets[props.planet];
   } else PlanetComponent = Planets[0];
 
-  return ( <PlanetComponent /> );
-}
- 
+  return (<PlanetComponent />);
+};
+
 export default Planet;

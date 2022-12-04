@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
 
-import { SectionWrapper } from './../../atoms/shared';
-import ParalaxBlock from './../../molecules/Paralax';
+import { SectionWrapper } from '../../atoms/shared';
+import ParalaxBlock from '../../molecules/Paralax';
 
-import { getData } from "./../../../assets/utils.js";
+import { getData } from '../../../assets/utils.js';
 
 class BlogGrid extends Component {
-  state = { 
-    posts: []
-  }
+  state = { posts: [] };
 
   async componentDidMount() {
-    const posts = await getData("/api/posts", "defaultPost");
-    this.setState({posts});
+    const posts = await getData('/api/posts', 'defaultPost');
+    this.setState({ posts });
   }
 
-  render() { 
-    return ( 
+  render() {
+    return (
       <SectionWrapper title="Frontend blog">
-        <ParalaxBlock data={ this.state.posts } />
+        <ParalaxBlock data={this.state.posts} />
       </SectionWrapper>
     );
   }
 }
- 
+
 export default BlogGrid;

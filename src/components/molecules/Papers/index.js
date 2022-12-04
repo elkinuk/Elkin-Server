@@ -1,3 +1,3 @@
-import PapersBlock from "./PapersBlock/PapersBlock";
+import PapersBlock from './PapersBlock/PapersBlock';
 
 export default PapersBlock;

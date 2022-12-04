@@ -1,3 +1,3 @@
-import BlogGrid from './BlogGrid'
+import BlogGrid from './BlogGrid';
 
 export default BlogGrid;

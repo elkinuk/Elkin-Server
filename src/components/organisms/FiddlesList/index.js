@@ -1,3 +1,3 @@
-import FiddlesList from './FiddlesList'
+import FiddlesList from './FiddlesList';
 
 export default FiddlesList;

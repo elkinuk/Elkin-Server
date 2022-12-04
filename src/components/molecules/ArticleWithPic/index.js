@@ -1,3 +1,3 @@
-import ArticleWithPic from './ArticleWithPic'
+import ArticleWithPic from './ArticleWithPic';
 
 export default ArticleWithPic;

@@ -1,18 +1,15 @@
-import React, { Component }  from 'react';
-import { SectionWrapper } from './../../atoms/shared';
-import CollapseBlock from "./../../molecules/Collapse";
+import React, { Component } from 'react';
+import { SectionWrapper } from '../../atoms/shared';
+import CollapseBlock from '../../molecules/Collapse';
 
-import { getData } from "./../../../assets/utils.js";
+import { getData } from '../../../assets/utils.js';
 
 class Projects extends Component {
-
-  state = {
-    projects: []
-  }
+  state = { projects: [] };
 
   async componentDidMount() {
-    const projects = await getData("/api/projects", "defaultProject", true);
-    this.setState({projects});
+    const projects = await getData('/api/projects', 'defaultProject', true);
+    this.setState({ projects });
   }
 
   render() {
@@ -22,8 +19,6 @@ class Projects extends Component {
       </SectionWrapper>
     );
   }
-
 }
-
 
 export default Projects;
