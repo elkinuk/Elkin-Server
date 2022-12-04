@@ -12,8 +12,12 @@
     "build": "next build && cross-env NODE_ENV=production babel server -d build",
     "start": "cross-env NODE_ENV=production node server.js",
     "prettier:fix": "npx prettier --write .",
-    "lint": "eslint src --ext .js,.jsx",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:js": "eslint src --ext .js,.jsx",
+    "lint:js:fix": "npm run lint -- --fix",
+    "lint:scss": "npx stylelint \"**/*.scss\"",
+    "lint:scss:fix": "npm run lint:scss --fix",
+    "lint": "npm run lint:js",
+    "lint:fix": "npm run lint:js:fix && npm run lint:scss:fix"
   },
   "dependencies": {
     "@babel/runtime": "^7.20.0",
@@ -50,6 +54,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-redux": "^4.0.0",
     "nodemon": "^2.0.20",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.0",
+    "stylelint": "^14.16.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard-scss": "^6.1.0"
   }
 }
