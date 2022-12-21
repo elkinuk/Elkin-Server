@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import CircleMenuItem from '../CircleMenuItem/CircleMenuItem';
-import { getData } from '../../../../assets/utils';
+import { getData } from '../../../assets/utils';
 
 import style from './style.module.scss';
 
@@ -10,9 +10,12 @@ const CircleMenuBlock = () => {
   const [contacts, setContacts] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(async () => {
-    const newContacts = await getData('/api/contacts');
-    setContacts(newContacts);
+  useEffect(() => {
+    const fetchData = async () => {
+      const newContacts = await getData('/api/contacts');
+      setContacts(newContacts);
+    };
+    fetchData();
   }, []);
 
   const handleClick = () => {
@@ -21,7 +24,7 @@ const CircleMenuBlock = () => {
 
   const createGroup = (data) =>
     data.map((el) => (
-      <CircleMenuItem key={el._id} isOpen={isOpen} contact={el} />
+      <CircleMenuItem key={el.url} isOpen={isOpen} contact={el} />
     ));
 
   return (

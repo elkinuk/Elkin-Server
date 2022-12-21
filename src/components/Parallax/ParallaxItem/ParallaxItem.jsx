@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 import style from './style.module.scss';
 
-class ParalaxItem extends Component {
+class ParallaxItem extends Component {
   constructor(props) {
     super(props);
     this.cardRef = React.createRef();
@@ -100,4 +100,4 @@ class ParalaxItem extends Component {
   }
 }
 
-export default ParalaxItem;
+export default ParallaxItem;

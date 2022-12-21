@@ -1,6 +1,6 @@
 import React from 'react';
 
-import About from '../../atoms/About';
+import About from '../About';
 
 const Description = () => <About />;
 

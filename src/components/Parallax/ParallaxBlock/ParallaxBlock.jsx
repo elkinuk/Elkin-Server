@@ -1,14 +1,14 @@
 import React from 'react';
 
-import ParalaxItem from '../ParalaxItem/ParalaxItem';
+import ParallaxItem from '../ParallaxItem/ParallaxItem';
 
 import style from './style.module.scss';
 
-const ParalaxBlock = ({ data }) => {
+const ParallaxBlock = ({ data }) => {
   const createGroup = (groupData) =>
     groupData.map((el) => (
-      <ParalaxItem
-        key={el._id}
+      <ParallaxItem
+        key={el.title}
         index={el.id}
         title={el.title}
         subTitle={`${el.subTitle} . . .`}
@@ -19,4 +19,4 @@ const ParalaxBlock = ({ data }) => {
   return <div className={style['paralax-container']}>{createGroup(data)}</div>;
 };
 
-export default ParalaxBlock;
+export default ParallaxBlock;

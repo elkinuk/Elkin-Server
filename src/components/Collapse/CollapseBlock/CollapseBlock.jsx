@@ -17,7 +17,7 @@ const CollapseBlock = ({ data }) => {
     groupData.map((item, index) => (
       <CollapseItem
         data={item}
-        key={item._id}
+        key={item.url}
         isActive={activeCard === index}
         handleClick={() => handleClick(index)}
       />

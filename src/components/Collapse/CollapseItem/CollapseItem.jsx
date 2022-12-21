@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import style from './style.module.scss';
 
-import { LinkSimple } from '../../../atoms/shared';
+import { LinkSimple } from '../../shared';
 
 const CollapseItem = ({ data, isActive, handleClick }) => {
   const getPic = () => {
-    const [pic, picBlur] = data;
+    const { pic, picBlur } = data || {};
 
     return isActive || !picBlur ? pic : picBlur;
   };

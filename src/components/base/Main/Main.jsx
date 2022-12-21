@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CircleMenu from '../../molecules/CircleMenu';
+import CircleMenu from '../../CircleMenu';
 
 import style from './style.module.scss';
 

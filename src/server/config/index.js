@@ -1,15 +1,16 @@
 import express from 'express';
 
-import routers from '../modules';
+import indexRouter from '../modules';
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/', routers.indexRouter);
+app.use('/', indexRouter);
 
-app.use((err, req, res) => {
+/* eslint-disable-next-line no-unused-vars */
+app.use((err, req, res, next) => {
   res.locals.message = err.message;
   res.locals.status = err.status || 500;
 

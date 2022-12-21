@@ -1,7 +1,7 @@
 import React from 'react';
 
 import style from './style.module.scss';
-import Planet from '../../atoms/Planet';
+import Planet from './Planet';
 
 const PlanetsParade = ({ data }) => {
   const createGroup = () =>

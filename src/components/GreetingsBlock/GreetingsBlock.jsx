@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Greetings from '../../atoms/Greetings';
+import Greetings from './Greetings';
 
 import style from './style.module.scss';
 

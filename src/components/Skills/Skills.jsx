@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { SectionWrapper } from '../../atoms/shared';
-import PlanetsParade from '../../molecules/PlanetsParade';
+import { SectionWrapper } from '../shared';
+import PlanetsParade from './PlanetsParade';
 
 const Skills = () => {
   let data = [

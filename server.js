@@ -8,7 +8,7 @@ const handle = nextApp.getRequestHandler();
 
 const appPath = `./${dev ? 'src/server' : 'build'}/app`;
 
-const appListen = require(appPath);
+const appListen = require(appPath).default;
 
 nextApp
   .prepare()

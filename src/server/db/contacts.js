@@ -17,12 +17,17 @@ export default {
     },
     {
       _id: { $oid: '5ea0980feca3ca2dd7e7c785' },
-      url: 'https://github.com/elkinny',
+      url: 'https://github.com/elkinuk',
       icon: ['fab', 'github'],
     },
     {
       _id: { $oid: '5ea0980feca3ca2dd7e7c786' },
       url: 'mailto:elkin.working@gmail.com',
+      icon: ['fas', 'envelope'],
+    },
+    {
+      _id: { $oid: '5ea0980feca3ca2dd7e7c787' },
+      url: 'mailto:elkin.life@gmail.com',
       icon: ['fas', 'envelope'],
     },
   ],
