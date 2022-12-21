@@ -3,7 +3,7 @@ import React from 'react';
 import { Header, Main, Footer } from '../components/base';
 
 import './style.scss';
-import '../assets/icons';
+import '../utils/icons';
 
 const MyApp = ({ Component, pageProps }) => (
   <div className="main">

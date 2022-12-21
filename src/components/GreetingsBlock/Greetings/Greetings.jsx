@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { type } from '../../../assets/typical';
+import { type } from './utils';
 
 import style from './style.module.scss';
 

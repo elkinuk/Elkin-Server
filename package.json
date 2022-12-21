@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "npx nodemon --exec npx babel-node server.js",
     "clean": "rm -rf build && mkdir build",
-    "build": "next build && cross-env NODE_ENV=production babel server -d build",
+    "build": "next build && cross-env NODE_ENV=production babel src/server -d build",
     "start": "cross-env NODE_ENV=production node server.js",
     "prettier:fix": "npx prettier --write .",
     "lint:js": "eslint src --ext .js,.jsx",

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import CircleMenuItem from '../CircleMenuItem/CircleMenuItem';
-import { getData } from '../../../assets/utils';
+import { getData } from '../../../utils';
 
 import style from './style.module.scss';
 

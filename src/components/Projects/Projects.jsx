@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { SectionWrapper } from '../shared';
 import CollapseBlock from '../Collapse';
 
-import { getData } from '../../assets/utils';
+import { getData } from '../../utils';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
