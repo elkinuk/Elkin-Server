@@ -1,19 +1,20 @@
 import React from 'react';
+import clsx from 'clsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { LinkSimple } from '../../shared';
 
 import style from './style.module.scss';
 
-const CircleMenuItem = ({ contact, isOpen }) => (
-  <li className={`${style.item} ${isOpen ? style['item--active'] : ''}`}>
-    <a
-      className={style.link}
-      href={contact.url}
-      target="_blank"
-      rel="noreferrer"
-    >
-      <FontAwesomeIcon icon={contact.icon} />
-    </a>
-  </li>
-);
+const CircleMenuItem = ({ contact = {}, isOpen = false }) => {
+  const { url, icon } = contact;
 
+  return (
+    <li className={clsx(style.item, isOpen && style['item--active'])}>
+      <LinkSimple className={style.link} href={url} zeroStyle>
+        <FontAwesomeIcon icon={icon} />
+      </LinkSimple>
+    </li>
+  );
+};
 export default CircleMenuItem;

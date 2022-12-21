@@ -2,13 +2,8 @@ import React from 'react';
 
 import Planets from './Planets';
 
-const Planet = ({ planet }) => {
-  let PlanetComponent;
-
-  if (planet && planet < Planets.length) {
-    PlanetComponent = Planets[planet];
-  } else PlanetComponent = Planets[0];
-
+const Planet = ({ planet = 0 }) => {
+  const PlanetComponent = Planets[planet];
   return <PlanetComponent />;
 };
 

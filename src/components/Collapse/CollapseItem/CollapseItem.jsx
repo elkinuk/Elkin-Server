@@ -6,19 +6,17 @@ import style from './style.module.scss';
 
 import { LinkSimple } from '../../shared';
 
-const CollapseItem = ({ data, isActive, handleClick }) => {
-  const getPic = () => {
-    const { pic, picBlur } = data || {};
+const CollapseItem = ({ data = {}, isActive = false, handleClick }) => {
+  const { pic, picBlur, icon, iconColour, name, text, url } = data;
 
-    return isActive || !picBlur ? pic : picBlur;
-  };
+  const picUrl = isActive || !picBlur ? pic : picBlur;
 
   return (
     <div
       className={`${style.card} ${isActive ? style.active : ''}`}
       style={{
-        '--optionBackground': `url("${getPic()}")`,
-        '--optionColour': data.iconColour,
+        '--optionBackground': `url("${picUrl}")`,
+        '--optionColour': iconColour,
       }}
       onClick={handleClick}
       role="button"
@@ -26,13 +24,13 @@ const CollapseItem = ({ data, isActive, handleClick }) => {
     >
       <div className={style.label}>
         <div className={style.icon}>
-          <FontAwesomeIcon icon={data.icon} />
+          <FontAwesomeIcon icon={icon} />
         </div>
         <div className={style.info}>
-          <div className={style.main}>{data.name}</div>
-          <div className={style.sub}>{data.text}</div>
+          <div className={style.main}>{name}</div>
+          <div className={style.sub}>{text}</div>
           <div className={style.link}>
-            <LinkSimple href={data.url}>Let&apos;s see</LinkSimple>
+            <LinkSimple href={url}>Let&apos;s see</LinkSimple>
           </div>
         </div>
       </div>

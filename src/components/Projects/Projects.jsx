@@ -8,15 +8,9 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const newProjects = await getData(
-        '/api/projects',
-        'defaultProject',
-        true,
-      );
+    getData('/api/projects', 'defaultProject', true).then((newProjects) => {
       setProjects(newProjects);
-    };
-    fetchData();
+    });
   }, []);
 
   return (
