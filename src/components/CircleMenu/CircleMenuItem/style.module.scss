@@ -1,0 +1,75 @@
+$item-count: 6;
+$item-size: 40px;
+$item-color: white;
+$item-transition: 0.5s;
+$items-distance: 10px;
+
+@mixin absolute-center {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+.item {
+  @include absolute-center;
+  @include size($item-size);
+  display: block;
+  opacity: 0;
+  transition: $item-transition;
+
+  .link {
+    display: block;
+    width: inherit;
+    height: inherit;
+    line-height: $item-size * 1.1;
+    color: rgba($item-color, 0.5);
+    background: rgba(black, 0.15);
+    box-shadow: 0 0 40px 1px rgba(black, 0.6);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: $item-size/2;
+    pointer-events: none;
+    svg {
+      transition: 0.2s;
+    }
+
+    &:hover {
+      color: $item-color;
+
+      svg {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  @for $i from 0 through $item-count - 1 {
+    &:nth-child(#{$i + 1}) a {
+      transform: rotate(-360deg / $item-count * $i);
+    }
+  }
+
+  &--active {
+    opacity: 1;
+
+    .link {
+      pointer-events: auto;
+    }
+
+    @for $i from 0 through $item-count - 1 {
+      &:nth-child(#{$i + 1}) {
+        transform: rotate(360deg / $item-count * $i)
+          translateX(-$item-size - $items-distance);
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-
-@keyframes flickering { // to allow see proper name globally
+@keyframes flickering {
+  // to allow see proper name globally
   0% {
     opacity: 1;
   }
@@ -11,7 +11,8 @@
   }
 }
 
-@keyframes fadeIn { // to allow see proper name globally
+@keyframes fadeIn {
+  // to allow see proper name globally
   0% {
     opacity: 0;
   }
@@ -20,14 +21,13 @@
   }
 }
 
+.moving-cursor:after {
+  margin-left: 3px;
+  content: '_' !important;
+  animation: flickering 0.9s infinite !important;
+  position: absolute;
+}
 
-  .moving-cursor:after {
-    margin-left: 3px;
-    content: "_" !important;
-    animation: flickering 0.9s infinite !important;
-    position: absolute;
-  }
-
-  .fadeIn {
-    animation: fadeIn 2s 0.7s forwards;
-  }
+.fadeIn {
+  animation: fadeIn 2s 0.7s forwards;
+}

@@ -3,42 +3,42 @@
   color: #fff;
 
   h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Consolas";
-    }
-  
-    p,
-    a {
-      font-family: "HelveticaNeueCyr";
-      font-weight: 300;
-      font-style: normal;
-      color: inherit;
-    }
-  
-    .text-align--center {
-      text-align: center;
-    }
-  
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Consolas';
+  }
+
+  p,
+  a {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 300;
+    font-style: normal;
+    color: inherit;
+  }
+
+  .text-align--center {
+    text-align: center;
+  }
+
+  .desctop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+  @media screen and (max-width: 798px) {
     .desctop {
-      display: block;
-    }
-  
-    .mobile {
       display: none;
     }
-    @media screen and (max-width: 798px) {
-      .desctop {
-        display: none;
-      }
-  
-      .mobile {
-        display: block;
-      }
+
+    .mobile {
+      display: block;
     }
+  }
 }
 
 .wrapper {

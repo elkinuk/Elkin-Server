@@ -1,0 +1,20 @@
+.greeting {
+  text-align: center;
+  margin: auto;
+  min-height: 160px;
+
+  .title {
+    font-size: 60px;
+    font-family: "Consolas";
+  }
+
+  .subtitle {
+    font-size: 40px;
+    font-family: "Consolas";
+  }
+
+  .comment {
+    font-size: 20px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.article {
+  .title {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .paragraph {
+    margin: 10px 0;
+    text-indent: 30px;
+    text-align: justify;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 100;
+
+    @media screen and (max-width: 798px) {
+      font-family: 'HelveticaNeueCyr';
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .planet-container {
+    text-align: center;
+    margin: 0 20px;
+
+    .subtitle {
+      opacity: 0.5;
+      font-size: 14px;
+    }
+
+    .planet {
+      margin: 10px 0;
+      width: 120px;
+
+      @media screen and (max-width: 798px) {
+        margin: 10px 0 30px;
+      }
+    }
+  }
+}
