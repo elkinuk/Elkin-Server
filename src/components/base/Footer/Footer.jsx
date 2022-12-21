@@ -5,7 +5,7 @@ import style from './style.module.scss';
 const Footer = () => (
   <footer className={style.footer}>
     <h6 className="text-align--center">
-      Copyrighted (c) {new Date().getFullYear()} elkin
+      Copyrighted (c) {new Date().getFullYear()} elkin.uk
     </h6>
   </footer>
 );

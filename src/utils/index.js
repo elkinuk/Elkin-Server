@@ -24,7 +24,7 @@ const fillFields = (mainObject, ...args) => {
   };
 
   if (Array.isArray(mainObject)) {
-    return mainObject.map((el) => fillerFunction(el, ...args));
+    return mainObject?.map((el) => fillerFunction(el, ...args));
   }
   return fillerFunction(mainObject, ...args);
 };
