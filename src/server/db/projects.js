@@ -7,7 +7,7 @@ export default {
       picBlur: 'slender-screen-blur.jpg',
       icon: ['fas', 'gamepad'],
       text: 'Loerm ipsum dalor',
-      url: 'https://dmitry-white.github.io/Slender/',
+      url: 'https://elkinuk.github.io/Slender/',
     },
     {
       _id: { $oid: '5ea097ebeca3ca2dd7e7c77e' },
