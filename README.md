@@ -1,2 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
-Path to BD locally - /usr/local/var/mongod
+[![Lint](https://github.com/elkinuk/Elkin-Server/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/elkinuk/Elkin-Server/actions/workflows/lint.yml)
