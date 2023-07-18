@@ -6,7 +6,7 @@ export default {
       pic: 'slender-screen.png',
       picBlur: 'slender-screen-blur.jpg',
       icon: ['fas', 'gamepad'],
-      text: 'Loerm ipsum dalor',
+      text: 'Game on vanilla JS, written as a final project on Rolling Scopes Frontent courses',
       url: 'https://elkinuk.github.io/Slender/',
     },
     {

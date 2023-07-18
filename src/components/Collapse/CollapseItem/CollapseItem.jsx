@@ -28,10 +28,10 @@ const CollapseItem = ({ data = {}, isActive = false, handleClick }) => {
         </div>
         <div className={style.info}>
           <div className={style.main}>{name}</div>
-          <div className={style.sub}>{text}</div>
           <div className={style.link}>
             <LinkSimple href={url}>Let&apos;s see</LinkSimple>
           </div>
+          <p className={style.sub}>{text}</p>
         </div>
       </div>
     </div>

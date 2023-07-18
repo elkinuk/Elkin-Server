@@ -4,12 +4,12 @@ import { SectionWrapper } from '../shared';
 import PlanetsParade from './PlanetsParade';
 
 const config = [
-  { title: 'JS', since: 2017 },
-  { title: 'HTML', since: 2017 },
-  { title: 'CSS/SCSS', since: 2017 },
   { title: 'REACT.JS', since: 2018 },
-  { title: 'VUE.JS', since: 2018 },
-  { title: 'NODE.JS', since: 2020 },
+  { title: 'JS/TS', since: 2017 },
+  { title: 'CSS/SCSS', since: 2017 },
+  { title: 'NODE.JS', since: 2019 },
+  { title: 'JEST', since: 2018 },
+  { title: 'AWS', since: 2022 },
 ];
 
 const skills = config?.map((el) => {
@@ -21,7 +21,7 @@ const skills = config?.map((el) => {
 });
 
 const Skills = () => (
-  <SectionWrapper title="Skills">
+  <SectionWrapper title="Key skills">
     <PlanetsParade data={skills} />
   </SectionWrapper>
 );

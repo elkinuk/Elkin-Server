@@ -1,23 +1,6 @@
 export default {
   data: [
     {
-      _id: { $oid: '5ea098efeca3ca2dd7e7c78b' },
-      id: 'defaultFiddle',
-      data: {
-        keyHash: 'nLzf164h',
-        title: 'NO Title',
-        text: [
-          'If you are at least a bit familiar with programming, you have already heard this phrase. And most of us have seen it in programming books, videos and so on. But if you are new in software development, you might be a bit confused: what is so special about these words?',
-          "Actually, nothing. It’s just a phrase which developers use as string placeholders in theirs code. Also, it is a short name of basic and the simplest program in any language. This program just outputs 'Hello World' string in a console, browser, etc. Nine times out of ten it is the first program written by people learning a new programming language.",
-          "People have been using 'Hello world' since the 70's, and I am using exactly this expression to greet the world and introduce this account. Here I am going to share with you a lot of interesting information about programming (and front-end in particular).",
-          "Not a developer yet? Do not worry, it is not a problem. I'm going to provide you with sources where you can learn, with a bunch of useful facts and we will discuss related topics, I will answer your questions. I will show you techniques to create cool landing pages, UI animations, algorithms to operate with data. We are going to study new tools and frameworks.",
-          'This is your ,easy way to IT-world.',
-          'Welcome!',
-        ],
-        config: 'result,js,html,css',
-      },
-    },
-    {
       _id: { $oid: '5ea098efeca3ca2dd7e7c78c' },
       id: 'defaultPost',
       data: {
