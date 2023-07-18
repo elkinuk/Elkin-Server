@@ -20,6 +20,11 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'max-len': 'off',
     'prefer-destructuring': 'off',
-    'prettier/prettier': ['error'],
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 };

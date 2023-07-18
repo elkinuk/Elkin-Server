@@ -1,7 +1,27 @@
 .article {
+  margin-left: 2em;
+  margin-bottom: 30px;
+  font-family: 'HelveticaNeueCyr';
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 798px) {
+    font-size: 18px;
+  }
+
   .title {
-    text-align: center;
+    text-align: left;
     font-size: 1.3em;
+    margin: 10px 0 0;
+  }
+
+  .subTitle {
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: 100;
+    margin-top: 5px;
   }
 
   .paragraph {
